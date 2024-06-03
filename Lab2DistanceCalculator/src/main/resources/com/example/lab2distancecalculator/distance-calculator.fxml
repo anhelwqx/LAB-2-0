@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.lab2distancecalculator.DController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <hgap>
+        10
+    </hgap>
+    <vgap>
+        8
+    </vgap>
+
+    <!-- Latitude 1 -->
+    <Label text="Latitude 1 (degrees):" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="lat1Field" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <!-- Longitude 1 -->
+    <Label text="Longitude 1 (degrees):" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="lon1Field" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <!-- Latitude 2 -->
+    <Label text="Latitude 2 (degrees):" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="lat2Field" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <!-- Longitude 2 -->
+    <Label text="Longitude 2 (degrees):" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="lon2Field" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <!-- Calculate Button -->
+    <Button text="Calculate Distance" fx:id="calculateButton" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <!-- Result Label -->
+    <Label fx:id="resultLabel" text="Distance: " GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+</GridPane>
